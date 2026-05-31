@@ -1,0 +1,8 @@
+int main() {
+    print(5);
+    let x = input();
+    let y = input();
+    let z = x + y;
+    print(z);
+    return(0);
+}

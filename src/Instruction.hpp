@@ -22,6 +22,7 @@ namespace bytecodeinterpreter {
         STORE_INT_BASEPOINTER_RELATIVE,
         CALL,
         RETURN,
+        READ_INT,
         NUM_INSTRUCTIONS
     };
 

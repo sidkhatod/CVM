@@ -25,6 +25,7 @@ namespace bytecodeinterpreter {
         StoreIntBasepointerRelativeInstruction,
         CallInstruction,
         ReturnInstruction,
+        ReadIntInstruction,
     };
 
     /*static*/ void BytecodeInterpreter::Run(Instruction* code, vector<int16_t> arguments, int16_t* result) {
@@ -165,5 +166,10 @@ namespace bytecodeinterpreter {
         registers.stack.pop_back();
         registers.currentInstruction = returnAddress;
     }
-
+    void ReadIntInstruction(InterpreterRegisters& registers) {
+        int16_t value = 0;
+        cin >> value;
+        registers.stack.push_back(value);
+        ++registers.currentInstruction;
+    }
 }
