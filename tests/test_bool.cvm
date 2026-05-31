@@ -1,0 +1,17 @@
+int main() {
+    bool a = true;
+    bool b = false;
+    print(a);
+    print(b);
+    if (a == true) {
+        print(1);
+    } else {
+        print(0);
+    };
+    if (b == true) {
+        print(99);
+    } else {
+        print(42);
+    };
+    return(0);
+}
